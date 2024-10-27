@@ -1,0 +1,144 @@
+/* General Site Style */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Black background */
+    color: #f4f4f4; /* Light gray text */
+    margin: 0;
+    padding: 0;
+    cursor: url('https://example.com/old-school-cursor.png'), auto; /* Custom cursor */
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #111; /* Slightly lighter black for contrast */
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: #f4f4f4;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #bbb;
+}
+
+/* Page Titles */
+h1, h2 {
+    color: #f4f4f4; /* Light gray for contrast */
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Contact Form Style */
+form {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid #333;
+    background-color: #222; /* Dark background for form */
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    font-size: 16px;
+    color: #f4f4f4;
+    margin-bottom: 8px;
+}
+
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #f4f4f4;
+    background-color: #333; /* Dark input fields */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #bbb;
+    outline: none;
+    background-color: #444;
+}
+
+/* Send Button */
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    color: #f4f4f4;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 14px;
+}
+
+/* Header and Footer Styles */
+nav {
+    background-color: #111;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: #f4f4f4;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #bbb;
+}
+
+footer {
+    background-color: #111;
+    color: #f4f4f4;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 14px;
+}
+
+skull {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 300px; /* Adjust the size as needed */
+}

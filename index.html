@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="header"></div>
+        <span id="skull">💀</span>
+        <script>
+            const skull = document.getElementById('skull');
+            let shakeTimeout;
+            document.addEventListener('mousemove', (event) => {
+                const mouseX = event.clientX;
+                const mouseY = event.clientY;
+                const angleX = (mouseY - window.innerHeight / 2) / 100;
+                const angleY = (mouseX - window.innerWidth / 2) / 100;
+              
+                // Clear any existing shake timeout
+                clearTimeout(shakeTimeout);
+        
+                // Function to apply shake effect
+                const shake = () => {
+                    const shakeX = (Math.random() - 0.5) * 4; // Increased shake intensity
+                    const shakeY = (Math.random() - 0.5) * 4; // Increased shake intensity
+                    const newTransform = `translate(-50%, -50%) 
+                        rotateX(${angleX + shakeX}deg) 
+                        rotateY(${angleY + shakeY}deg)`;
+                    skull.style.transform = newTransform;
+                    console.log('Applying shake:', newTransform); // Debug log
+                };
+        
+                // Apply initial shake
+                shake();
+        
+                // Continue shaking for a short duration
+                for (let i = 1; i <= 10; i++) { // Increased number of shakes
+                    shakeTimeout = setTimeout(shake, i * 30); // Decreased interval between shakes
+                }
+            });
+        
+            console.log('Script loaded and running'); // Debug log
+        </script>
+  
+        <h1>Welcome to My Portfolio   </h1>
+      <p>Experienced Software Engineer with a passion for community and innovation.</p>
+        <section>
+            <img src="images/sample1.jpg" alt="Sample Profile" class="profile-image">
+            <p>Hi, I’m a software engineer with over 10 years of experience...</p>
+        </section>
+    </main>
+    <div id="footer"></div>
+    <script src="js/main.js"></script>
+</body>
+</html>
